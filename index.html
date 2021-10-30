@@ -33,6 +33,7 @@
             text-align: center;
             margin-left: auto;
             margin-right: auto;
+            border-radius: 4px;
             }
         td{
                 border: 0.5px solid black;
@@ -56,7 +57,7 @@
             font-family: 'Space Mono', monospace;
         }
         .font-color{
-            color: rgb(0, 3, 5);
+            color: slateblue;
             
         }
         
@@ -70,16 +71,28 @@
             display:none; 
             transition: all .5s;
         }
-        /* Visible texto */
+        /* Visible texto o imagenes */
         figure:hover > figcaption {
             display:block;
             transition: all .5s;
             
         }
         .logo-tamano{
-            width: 120px;
-            height: 150px;
+            width: 80px;
+            height: 80px;
         }
+        .cuadro{
+            border: 1px solid black;
+        }
+        .box1{
+            float: right;
+        }
+        .box2{
+            float: left;
+        }
+        
+        
+        
     </style>
     
 </head>
@@ -89,100 +102,98 @@
     </header>
     <hr>
     <div>
-        <table class="font">
-            <caption class="center" style="text-decoration: underline black;font-size: 30px;">Portable programs</caption>
-            
-            <thead>
-                <tr style="background-color: rgb(200, 106, 219);">
-                    <td>Name</td>
-                    <td >Download links</td>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <td>Photoshop</td>
-                    <td class="links">
-                        <figure>
-                            <a class="font-color" href="">Link</a>
-                            <figcaption>
-                                <img class="logo-tamano" src="images/photoshop.jpg" alt="">
-                            </figcaption>
-    
-                        </figure>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td>Adobe Premier</td>
-                    <td class="links"><a class="font-color" href="" download="">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Kenshi</td>
-                    <td class="links">
-                        <figure>
-                            <a class="font-color" href="https://drive.google.com/drive/folders/1joCvoOZI9zQwNQ-xVUgifhM2PH9y12Vn?usp=sharing" >Link</a>
+        
+        <div class="center">
+            <table class="font">
+                <caption class="center" style="text-decoration: underline black;font-size: 30px;">Portable programs</caption>
 
-                            <figcaption>
-                                <img class="logo-tamano" src="images/kenshi.jpeg" alt="">
-                            </figcaption>
-    
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Works</td>
-                    <td class="links"><a class="font-color" href="" download="">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Minecraft</td>
-                    <td class="links"><a class="font-color" href="https://drive.google.com/drive/folders/1rc93LdyvUwXVok02OMMFT64DxxxnFXLL?usp=sharing" >Link</a></td>
-                </tr>
-                <tr>
-                    <td>Simpsons Hit and run</td>
-                    <td class="links">
-                        <figure>
-                            <a class="font-color" href="https://drive.google.com/drive/folders/1RenvxeZrAUnrkkzXTMu7QivrtEdt4uEE?usp=sharing" >Link</a>
-
-                            <figcaption>
-                                <img class="logo-tamano" src="images/simpsons.jpg" alt="">
-                            </figcaption>
-    
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>60Secons Reatomized</td>
-                    <td class="links">
-                        <figure>
-                            <a class="font-color" href="https://drive.google.com/drive/folders/1YKtNh98fNX1XvivZ7fuaO_KRZX7K3Sws?usp=sharing" >Link</a>
-    
-                            <figcaption>
-                                <img class="logo-tamano" src="images/60se.jpg" alt="">
-                            </figcaption>
-    
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Subnautica</td>
-                    <td class="links"><figure>
-                        <a class="font-color" href="https://drive.google.com/drive/folders/12p3VvOSIw0ZYMRZBxvclvZtpuhI75hcM?usp=sharing" >Link</a>
-
-                        <figcaption>
-                            <img class="logo-tamano" src="images/descarga.jpg" alt="">
-                        </figcaption>
-
-                    </figure> </td>
-                </tr>
-    
-            </tbody>
-            <tfoot>
                 
-            </tfoot>
+                <thead>
+                    <tr style="background-color: rgb(200, 106, 219);">
+                        <td>Name</td>
+                        <td >Download links</td>
+                        <td>
+                            Cover
+                        </td>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Photoshop</td>
+                        <td class="links">
+                            <a class="font-color" href="">Link</a>
+                        </td>
+                        <td>
+                            <img class="logo-tamano" src="images/photoshop.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Premier</td>
+                        <td class="links">
+                            <a class="font-color" href="" download="">Link</a>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kenshi</td>
+                        <td class="links">
+                            <a class="font-color" href="https://drive.google.com/drive/folders/1joCvoOZI9zQwNQ-xVUgifhM2PH9y12Vn?usp=sharing" >Link</a>
+                        </td>
+                        <td>
+                            <img class="logo-tamano" src="images/kenshi.jpeg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Works</td>
+                        <td class="links"><a class="font-color" href="" download="">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td class="links"><a class="font-color" href="https://drive.google.com/drive/folders/1rc93LdyvUwXVok02OMMFT64DxxxnFXLL?usp=sharing" >Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Simpsons Hit and run</td>
+                        <td class="links">
+                                <a class="font-color" href="https://drive.google.com/drive/folders/1RenvxeZrAUnrkkzXTMu7QivrtEdt4uEE?usp=sharing" >Link</a>
+                        </td>
+                        <td>
+                            <img class="logo-tamano" src="images/simpsons.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>60Secons Reatomized</td>
+                        <td class="links">
+                                <a class="font-color" href="https://drive.google.com/drive/folders/1YKtNh98fNX1XvivZ7fuaO_KRZX7K3Sws?usp=sharing" >Link</a>
+                        </td>
+                        <td>
+                            <img class="logo-tamano" src="images/60se.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Subnautica</td>
+                        <td class="links">
+                            <a class="font-color" href="https://drive.google.com/drive/folders/12p3VvOSIw0ZYMRZBxvclvZtpuhI75hcM?usp=sharing" >Link</a>
     
-        </table>
+                    </td>
+                    <td>
+                        <img class="logo-tamano" src="images/descarga.jpg" alt="">
+                    </td>
+                    </tr>
+        
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+        
+            </table>
+        </div>
+        
+        
     </div>
+    
     
 </body>
 </html>
