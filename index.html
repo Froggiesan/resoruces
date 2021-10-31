@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Asi el usuario no podra hacer Zoom -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, inicial-scale 1.0,minimun-scale=1.0">
     <title>Resources</title>
     <style>
 
@@ -12,23 +14,33 @@
             padding: 0;
             margin: 0;
         }
+        .all{
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+
+        }
 
         header{
                 width: 100%;
-                height: 250px;
-                background: url(images/Captura.PNG) no-repeat center center fixed;
-                
+                height: 100%;
+                background-image: url(images/Captura.PNG);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-size: 100%;
+                
+                box-sizing: border-box;
             }
         body{
             background-color: rgb(236, 231, 225);
             
         }
         table{
-            border: 2px solid black;
+            border: 1% solid black;
             border-collapse: collapse;
             text-align: center;
             margin-left: auto;
@@ -41,16 +53,16 @@
                 
         }
         .logo{
-            width: 120px;
-            height: 150px;
+            width: 8%;
+            height: 70%;
             max-width: 1200px;
             float: left;
             align-items: initial;
             position: relative;
             display: block;
             bottom: 5%;
-            right: 47%;
-            top: 25%;
+            right: 44%;
+            top: 30%;
         }
         .font{
 
@@ -80,7 +92,7 @@
         .logo-tamano{
             
             width: 80px;
-            height: 80px;
+            height: auto;
         }
         .cuadro{
             border: 1px solid black;
@@ -92,114 +104,130 @@
             float: left;
         }
         
+        @media screen and (max-width: 767px) {
+            
+            header{
+                width: 100%;
+            }
+            
+        }
+        @media screen and (max-width:400px){
+            .all{
+                width: 100%;
+            }
+        }
         
         
     </style>
     
 </head>
 <body>
-    <header>
-        <img class="logo" src="images/logogallego2021.png" alt="">
-    </header>
-    <hr>
-    <div>
-        
-        <div class="center">
-            <table class="font">
-                <caption class="center" style="text-decoration: underline black;font-size: 30px;">Portable programs</caption>
-
-                
-                <thead>
-                    <tr style="background-color: rgb(200, 106, 219);">
-                        <td>Name</td>
-                        <td >Download links</td>
-                        <td>
-                            Cover
-                        </td>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>Photoshop</td>
-                        <td class="links">
-                            <a class="font-color" href="">Link</a>
-                        </td>
-                        <td>
-                            <img class="logo-tamano" src="images/photoshop.jpg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Adobe Premier</td>
-                        <td class="links">
-                            <a class="font-color" href="" download="">Link</a>
-                        </td>
-                        <td>
-                            <img class="logo-tamano" src="images/premier.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Kenshi</td>
-                        <td class="links">
-                            <a class="font-color" href="https://drive.google.com/drive/folders/1joCvoOZI9zQwNQ-xVUgifhM2PH9y12Vn?usp=sharing" >Link</a>
-                        </td>
-                        <td>
-                            <img class="logo-tamano" src="images/kenshi.jpeg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Works</td>
-                        <td class="links"><a class="font-color" href="" download="">Link</a></td>
-                        <td>
-                            <img class="logo-tamano" src="images/works.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Minecraft</td>
-                        <td class="links"><a class="font-color" href="https://drive.google.com/drive/folders/1rc93LdyvUwXVok02OMMFT64DxxxnFXLL?usp=sharing" >Link</a></td>
-                        <td>
-                            <img class="logo-tamano" src="images/minecraft.jpg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Simpsons Hit and run</td>
-                        <td class="links">
-                                <a class="font-color" href="https://drive.google.com/drive/folders/1RenvxeZrAUnrkkzXTMu7QivrtEdt4uEE?usp=sharing" >Link</a>
-                        </td>
-                        <td>
-                            <img class="logo-tamano" src="images/simpsons.jpg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>60Secons Reatomized</td>
-                        <td class="links">
-                                <a class="font-color" href="https://drive.google.com/drive/folders/1YKtNh98fNX1XvivZ7fuaO_KRZX7K3Sws?usp=sharing" >Link</a>
-                        </td>
-                        <td>
-                            <img class="logo-tamano" src="images/60se.jpg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Subnautica</td>
-                        <td class="links">
-                            <a class="font-color" href="https://drive.google.com/drive/folders/12p3VvOSIw0ZYMRZBxvclvZtpuhI75hcM?usp=sharing" >Link</a>
+    <div class="all">
+        <header>
+            <img class="logo" src="images/logogallego2021.png" alt="">
+        </header>
+        <hr>
+        <div>
+            
+            <div class="center">
+                <table class="font">
+                    <caption class="center" style="text-decoration: underline black;font-size: 30px;">Portable programs</caption>
     
-                    </td>
-                    <td>
-                        <img class="logo-tamano" src="images/descarga.jpg" alt="">
-                    </td>
-                    </tr>
-        
-                </tbody>
-                <tfoot>
                     
-                </tfoot>
+                    <thead>
+                        <tr style="background-color: rgb(200, 106, 219);">
+                            <td>Name</td>
+                            <td >Download links</td>
+                            <td>
+                                Cover
+                            </td>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Photoshop</td>
+                            <td class="links">
+                                <a class="font-color" href="">Link</a>
+                            </td>
+                            <td>
+                                <img class="logo-tamano" src="images/photoshop.jpg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adobe Premier</td>
+                            <td class="links">
+                                <a class="font-color" href="" download="">Link</a>
+                            </td>
+                            <td>
+                                <img class="logo-tamano" src="images/premier.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kenshi</td>
+                            <td class="links">
+                                <a class="font-color" href="https://drive.google.com/drive/folders/1joCvoOZI9zQwNQ-xVUgifhM2PH9y12Vn?usp=sharing" >Link</a>
+                            </td>
+                            <td>
+                                <img class="logo-tamano" src="images/kenshi.jpeg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Works</td>
+                            <td class="links"><a class="font-color" href="" download="">Link</a></td>
+                            <td>
+                                <img class="logo-tamano" src="images/works.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Minecraft</td>
+                            <td class="links"><a class="font-color" href="https://drive.google.com/drive/folders/1rc93LdyvUwXVok02OMMFT64DxxxnFXLL?usp=sharing" >Link</a></td>
+                            <td>
+                                <img class="logo-tamano" src="images/minecraft.jpg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Simpsons Hit and run</td>
+                            <td class="links">
+                                    <a class="font-color" href="https://drive.google.com/drive/folders/1RenvxeZrAUnrkkzXTMu7QivrtEdt4uEE?usp=sharing" >Link</a>
+                            </td>
+                            <td>
+                                <img class="logo-tamano" src="images/simpsons.jpg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>60Secons Reatomized</td>
+                            <td class="links">
+                                    <a class="font-color" href="https://drive.google.com/drive/folders/1YKtNh98fNX1XvivZ7fuaO_KRZX7K3Sws?usp=sharing" >Link</a>
+                            </td>
+                            <td>
+                                <img class="logo-tamano" src="images/60se.jpg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Subnautica</td>
+                            <td class="links">
+                                <a class="font-color" href="https://drive.google.com/drive/folders/12p3VvOSIw0ZYMRZBxvclvZtpuhI75hcM?usp=sharing" >Link</a>
         
-            </table>
+                        </td>
+                        <td>
+                            <img class="logo-tamano" src="images/descarga.jpg" alt="">
+                        </td>
+                        </tr>
+            
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+            
+                </table>
+            </div>
+            
+            
         </div>
         
-        
     </div>
+    
     
     
 </body>
